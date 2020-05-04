@@ -1,0 +1,11 @@
+version: '3'
+services:
+      jupios:
+            image: jupyter/scipy-notebook
+            volumes:
+                  - jupyter_storage:/home/joyan
+            restart: always
+            ports:
+                  - 8888:8888
+volumes: 
+      jupyter_storage:
